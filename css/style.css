@@ -1,0 +1,113 @@
+body {
+    background-color: #F7ECDE;
+}
+
+h1 {
+    color: #352E28;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    line-height: 60px;
+    padding: 8px 0;
+    font-weight: 500;
+    position: relative;
+    z-index: 5;
+}
+
+h1::after {
+    content: "";
+    width: 100%;
+    height: 25%;
+    background-color: #FEC260;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    z-index: -3;
+    transition: all 1s;
+}
+
+h1:hover::after {
+    height: 50%;
+
+}
+
+h2 {
+    background: linear-gradient(to right, green, #8A9E23);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: 'Righteous', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0 0 8px;
+
+}
+
+label {
+    color: #212529;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+th {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 8px;
+}
+
+td {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 8px;
+}
+
+#submitBtn {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 6px 48px;
+
+
+}
+
+.inputForm:before {
+    content: "";
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 2px dotted black;
+}
+
+.inputForm:after {
+    content: "";
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 2px dotted black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#visitbtn {
+    background-color: #a4c732;
+    color: white;
+}
+
+#visitbtn:hover {
+    background-color: #8A9E23;
+
+}

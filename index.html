@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./img/save-instagram-bookmark-symbol-18317.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>BookMarker</title>
+</head>
+
+<body>
+
+
+    <section class="text-center">
+
+        <div class="container">
+
+            <div class="d-flex justify-content-center my-5">
+                
+                <h1>Bookmarker</h1>
+
+            </div>
+
+            <div class="inputForm position-relative py-4">
+
+                <div class="d-flex justify-content-center">
+
+                        <h2><i class="fa-solid fa-bookmark"></i> Bookmark your favourite sites <i
+                            class="fa-solid fa-bookmark"></i>
+                        </h2>
+                </div>
+
+                <div class="my-4 text-start">
+
+                    <label for="siteNameInput" class="form-label"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                    <input type="text" class="form-control" id="siteNameInput" placeholder="BookMark Name" required>
+                    <div id="validName" class="valid-feedback d-none">
+                        accpeted Name
+                    </div>
+
+                    <div id="inValidName" class="invalid-feedback d-none">
+                        please Enter the Name
+                    </div>
+
+                </div>
+
+                <div class="my-4 text-start">
+
+                    <label for="siteUrlInput" class="form-label"><i class="fa-solid fa-link"></i> Site URL</label>
+                    <input type="url" class="form-control" id="siteUrlInput" placeholder="Website URL" required>
+                    <div id="validUrl" class="valid-feedback d-none">
+                        accepted URL
+                    </div>
+
+                    <div id="inValidUrl" class="invalid-feedback d-none">
+                        please enter the valid url ..must contain "http/https"
+                    </div>
+
+                </div>
+
+                <button id="submitBtn" class="btn btn-danger">Submit</button>
+
+            </div>
+
+            <div class="py-3">
+
+                <table class="table " id="sitesTable">
+
+                    <thead class="table-dark">
+
+                        <tr>
+                            <th scope="col">Index</th>
+                            <th scope="col">Website Name</th>
+                            <th scope="col">Visit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/dee991c215.js" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
